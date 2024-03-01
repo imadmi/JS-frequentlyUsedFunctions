@@ -7,7 +7,6 @@
 - **Example**:
     
     ```jsx
-    javascriptCopy code
     let arr = [1, 2, 3, 4];
     arr.splice(2, 1, 'a', 'b'); // Returns [3], arr is now [1, 2, 'a', 'b', 4]
     
@@ -21,7 +20,6 @@
 - **Example**:
     
     ```jsx
-    javascriptCopy code
     let numbers = [1, 2, 3, 4];
     let even = numbers.filter(n => n % 2 === 0); // Returns [2, 4]
     
@@ -35,7 +33,6 @@
 - **Example**:
     
     ```jsx
-    javascriptCopy code
     let numbers = [1, 2, 3, 4];
     let squares = numbers.map(n => n * n); // Returns [1, 4, 9, 16]
     
@@ -49,7 +46,6 @@
 - **Example**:
     
     ```jsx
-    javascriptCopy code
     let sum = [1, 2, 3, 4].reduce((acc, val) => acc + val, 0); // Returns 10
     
     ```
@@ -62,7 +58,6 @@
 - **Example**:
     
     ```jsx
-    javascriptCopy code
     [1, 2, 3, 4].forEach(alert); // Alerts each number in turn
     
     ```
@@ -75,7 +70,6 @@
 - **Example**:
     
     ```jsx
-    javascriptCopy code
     let allEven = [2, 4, 6].every(n => n % 2 === 0); // Returns true
     
     ```
@@ -88,7 +82,6 @@
 - **Example**:
     
     ```jsx
-    javascriptCopy code
     let someEven = [1, 2, 3].some(n => n % 2 === 0); // Returns true
     
     ```
@@ -101,7 +94,6 @@
 - **Example**:
     
     ```jsx
-    javascriptCopy code
     let found = [1, 2, 3, 4].find(n => n > 2); // Returns 3
     
     ```
@@ -114,7 +106,6 @@
 - **Example**:
     
     ```jsx
-    javascriptCopy code
     let index = [1, 2, 3, 4].findIndex(n => n > 2); // Returns 2
     
     ```
@@ -127,7 +118,6 @@
 - **Example**:
     
     ```jsx
-    javascriptCopy code
     let arr = [3, 1, 4, 1, 5, 9];
     arr.sort((a, b) => a - b); // Returns [1, 1, 3, 4, 5, 9]
     
@@ -141,7 +131,6 @@
 - **Example**:
     
     ```jsx
-    javascriptCopy code
     let arr1 = [1, 2, 3];
     let arr2 = [4, 5, 6];
     let combined = arr1.concat(arr2); // Returns [1, 2, 3, 4, 5, 6]
@@ -156,7 +145,6 @@
 - **Example**:
     
     ```jsx
-    javascriptCopy code
     let arr = [1, 2, 3, 4, 5];
     let sliced = arr.slice(1, 3); // Returns [2, 3]
     
@@ -170,7 +158,6 @@
 - **Example** (Array):
     
     ```jsx
-    javascriptCopy code
     let arr = [1, 2, 3];
     let includesTwo = arr.includes(2); // Returns true
     
@@ -179,7 +166,6 @@
 - **Example** (String):
     
     ```jsx
-    javascriptCopy code
     let str = "hello";
     let includesEllo = str.includes("ello"); // Returns true
     
@@ -193,7 +179,6 @@
 - **Example** (Array):
     
     ```jsx
-    javascriptCopy code
     let arr = [1, 2, 3];
     let indexOfTwo = arr.indexOf(2); // Returns 1
     
@@ -202,7 +187,6 @@
 - **Example** (String):
     
     ```jsx
-    javascriptCopy code
     let str = "hello";
     let indexOfE = str.indexOf("e"); // Returns 1
     
@@ -216,7 +200,6 @@
 - **Example**:
     
     ```jsx
-    javascriptCopy code
     let arr = [1, 2, 3];
     let joined = arr.join("-"); // Returns "1-2-3"
     
@@ -230,7 +213,6 @@
 - **Example**:
     
     ```jsx
-    javascriptCopy code
     let num = 123;
     let str = num.toString(); // Returns "123"
     
@@ -244,7 +226,6 @@
 - **Example**:
     
     ```jsx
-    javascriptCopy code
     let num = 123456.789;
     let str = num.toLocaleString('en-US'); // Returns "123,456.789" for US English locale
     
@@ -258,7 +239,6 @@
 - **Example**:
     
     ```jsx
-    javascriptCopy code
     let arr = [1, 2, 3];
     let first = arr.shift(); // Returns 1, arr is now [2, 3]
     
@@ -272,7 +252,6 @@
 - **Example**:
     
     ```jsx
-    javascriptCopy code
     let arr = [2, 3];
     let newLength = arr.unshift(1); // Returns 3, arr is now [1, 2, 3]
     
@@ -286,7 +265,6 @@
 - **Example**:
     
     ```jsx
-    javascriptCopy code
     let arr = [1, 2, 3];
     arr.reverse(); // Now arr is [3, 2, 1]
     
@@ -300,7 +278,6 @@
 - **Example**:
     
     ```jsx
-    javascriptCopy code
     let arr = [1, 2, 3, 4];
     arr.fill(0, 2, 4); // Now arr is [1, 2, 0, 0]
     
@@ -314,7 +291,6 @@
 - **Example**:
     
     ```jsx
-    javascriptCopy code
     let arr = [1, 2, 3, 4, 5];
     arr.copyWithin(0, 3); // Now arr is [4, 5, 3, 4, 5]
     
@@ -328,7 +304,6 @@
 - **Example**:
     
     ```jsx
-    javascriptCopy code
     let arr = [1, [2, [3, [4]]]];
     let flattened = arr.flat(2); // Returns [1, 2, 3, [4]]
     
@@ -342,7 +317,6 @@
 - **Example**:
     
     ```jsx
-    javascriptCopy code
     let arr = [1, 2, 3];
     let mappedAndFlattened = arr.flatMap(x => [x, x * 2]); // Returns [1, 2, 2, 4, 3, 6]
     
@@ -356,7 +330,6 @@
 - **Example**:
     
     ```jsx
-    javascriptCopy code
     let arr = ['a', 'b', 'c'];
     let iterator = arr.keys();
     for (let key of iterator) {
@@ -373,7 +346,6 @@
 - **Example**:
     
     ```jsx
-    javascriptCopy code
     let arr = ['a', 'b', 'c'];
     let iterator = arr.values();
     for (let value of iterator) {
@@ -390,7 +362,6 @@
 - **Example**:
     
     ```jsx
-    javascriptCopy code
     let arr = ['a', 'b', 'c'];
     let iterator = arr.entries();
     for (let entry of iterator) {
@@ -407,7 +378,6 @@
 - **Example**:
     
     ```jsx
-    javascriptCopy code
     let arr = Array.from("123", num => Number(num)); // Returns [1, 2, 3]
     
     ```
@@ -420,7 +390,6 @@
 - **Example**:
     
     ```jsx
-    javascriptCopy code
     let arr = Array.of(1, 2, 3); // Returns [1, 2, 3]
     
     ```
@@ -433,7 +402,6 @@
 - **Example**:
     
     ```jsx
-    javascriptCopy code
     let isArray = Array.isArray([1, 2, 3]); // Returns true
     
     ```
@@ -446,7 +414,6 @@ The remaining items on your list refer to various JavaScript and Web APIs for ty
 - **Example Structure**:
     
     ```jsx
-    javascriptCopy code
     let isType = Type.isType(variable); // Returns true or false based on the type check
     
     ```
@@ -457,7 +424,6 @@ The remaining items on your list refer to various JavaScript and Web APIs for ty
 - **Example Structure**:
     
     ```jsx
-    javascriptCopy code
     let result = FunctionName(input[, additionalParameters]);
     
     ```
@@ -470,7 +436,6 @@ The remaining items on your list refer to various JavaScript and Web APIs for ty
 - **Example**:
     
     ```jsx
-    javascriptCopy code
     let result = eval('2 + 2'); // Returns 4
     
     ```
